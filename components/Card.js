@@ -8,10 +8,10 @@ Card.prototype.generate = function() {
   console.log(this.house.name);
   return `
   <article class="cards-container">
-    <h3>${this.house.name}</h3>
-    <p>${this.house.region}</p>
-    <p>${this.house.words}</p>
-    <p>${this.house.coatOfArms}</p>
+    <h3>House Nnme: ${this.house.name}</h3>
+    <p>House region: ${this.house.region}</p>
+    <p>House words: ${this.house.words}</p>
+    <p>House coat of arms: ${this.house.coatOfArms}</p>
   </article>
 `;
 }
