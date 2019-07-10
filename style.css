@@ -15,11 +15,16 @@ body {
 
 /* ---- typography ---- */
 
+@font-face {
+  font-family: 'GOT';
+  src: url('./style/GOT.ttf');
+}
+
 body {
   color: #111;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: GOT, Helvetica, Arial, sans-serif;
   font-size: 16px;
-  line-height: 147%;
+  line-height: 250%;
 }
 
 h1 {}
@@ -86,4 +91,35 @@ p {
 }
 
 /* ---- section ---- */
+
+/*.grid-container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 3fr 1fr 1fr;
+  grid-template-areas:
+    "header header header header"
+    "main main main main";
+}*/
+
+#site-header {
+  
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+li {
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+  list-style: none;
+}
 
