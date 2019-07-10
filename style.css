@@ -125,7 +125,7 @@ li a {
   background-image: linear-gradient(black, grey);
 }
 
-@media (min-width: 500px) {
+@media (min-width: 400px) {
   .landing-page {
     grid-template-areas:
     "main main main";
@@ -187,7 +187,7 @@ li a {
 }
 
 
-@media (min-width: 500px) {
+@media (min-width: 400px) {
   cards-container {
     grid-template-areas:
     "main main";
