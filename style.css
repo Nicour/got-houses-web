@@ -54,7 +54,6 @@ p {
 }
 
 #site-main {
-  margin-bottom: 60px;
 }
 
 .container {
@@ -92,46 +91,9 @@ p {
 
 /* ---- section ---- */
 
-
-.landing-page {
-  display: grid;
-  height: 95vh;
-  grid-template-columns: 0.1fr 1fr 0.1fr;
-  grid-template-rows: 0.1fr 1fr 1fr 0.1fr;
-  grid-template-areas:
-    "main main main";
-  gap: 10px;
+#site-header {
+  background-image: linear-gradient(grey, black);
 }
-
-@media (min-width: 500px) {
-  .landing-page {
-    grid-template-areas:
-    "main main main";
-  }
-}
-
-.title {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  text-align: center;
-  justify-self: center;
-  align-self: center;
-  font-size: 2em;
-}
-
-.subtitle {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 3;
-  grid-row-end: 4;
-  text-align: center;
-  justify-self: center;
-  align-self: start;
-  font-size: 1.3em;
-}
-
 
 ul {
   display: flex;
@@ -151,11 +113,59 @@ li a {
   color: #fff;
 }
 
+
+.landing-page {
+  display: grid;
+  height: 95vh;
+  grid-template-columns: 0.1fr 1fr 0.1fr;
+  grid-template-rows: 0.1fr 1fr 1fr 0.1fr;
+  grid-template-areas:
+    "main main main";
+  gap: 10px;
+  background-image: linear-gradient(black, grey);
+}
+
+@media (min-width: 500px) {
+  .landing-page {
+    grid-template-areas:
+    "main main main";
+  }
+}
+
+.title {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+  font-size: 2em;
+  color: whitesmoke;
+}
+
+.subtitle {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  text-align: center;
+  justify-self: center;
+  align-self: start;
+  font-size: 1.3em;
+  color: whitesmoke;
+}
+
+
+
 .houses-header {
   display: grid;
   text-align: center;
   justify-self: center;
   align-self: center;
+  color: whitesmoke;
+  background-color: black;
+  border: none;
 }
 
 .cards-container {
@@ -167,11 +177,15 @@ li a {
     "main main";
   gap: 10px;
   font-size: 0.9em;
+  color: whitesmoke;
   text-align: center;
   justify-self: center;
   align-self: center;
   padding: 2%;
+  background-image: linear-gradient(black, grey);
+  border: none;
 }
+
 
 @media (min-width: 500px) {
   cards-container {

@@ -5,7 +5,6 @@ function Card(house) {
 }
 
 Card.prototype.generate = function() {
-  console.log(this.house.name);
   return `
   <article class="card-container">
     <h3>${this.house.name}</h3>
