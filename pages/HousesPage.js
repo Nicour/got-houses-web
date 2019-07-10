@@ -12,7 +12,7 @@ HousesPage.prototype.generate = async function() {
   
   await this.connectToAPI();
   this.elements =  `
-    <header>
+    <header class="houses-header">
       <h2> Welcome to the GOT Houses Page </h2>
     </header>
     <section class="cards-container">
