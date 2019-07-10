@@ -7,10 +7,10 @@ function LandingPage(parentElement) {
 
 LandingPage.prototype.generate = function() {
   this.elements =  `
-    <section class="landing-page">
-      <header>
-        <h1> THE BEST GAME OF THRONES HOUSES WEB PAGE YOU HAVE EVER SEEN </h1>
-        <h3> Here you can find all the information about Game of Thrones Houses </h3>
+    <section>
+      <header class="landing-page">
+        <h1 class="title"> THE BEST GAME OF THRONES HOUSES WEB PAGE YOU HAVE EVER SEEN </h1>
+        <h3 class="subtitle"> Here you can find all the information about Game of Thrones Houses </h3>
       </header>
     </section>
   `;
