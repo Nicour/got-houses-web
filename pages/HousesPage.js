@@ -8,12 +8,12 @@ function HousesPage(parentElement) {
 }
 
 HousesPage.prototype.generate = async function() {
-  this.loading.generateLoading();
+  this.generateLoading();
   
   await this.connectToAPI();
   this.elements =  `
     <header>
-      <h2> Welcome to the Houses Page </h2>
+      <h2> Welcome to the GOT Houses Page </h2>
     </header>
     <section class="cards-container">
   `;

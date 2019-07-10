@@ -7,7 +7,7 @@ function GotService() {
 GotService.prototype.getAllHouses = async function() {
   var response =  await fetch(`${this.baseUrl}`);
   var data = await response.json();
- return data;
+  return data;
 }
 
 var gotServiceInstance = new GotService();
