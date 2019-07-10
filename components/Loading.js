@@ -6,7 +6,7 @@ function Loading(parentElement) {
 }
 
 Loading.prototype.generate = function() {
-  this.elements = '<p>Winter is comming...</p>';
+  this.elements = '<p class="loading">Winter is comming...</p>';
   this.render();
 }
 

@@ -156,7 +156,12 @@ li a {
   color: whitesmoke;
 }
 
-
+.loading {
+  background-image: linear-gradient(black, grey);
+  color: whitesmoke;
+  font-size: 1em;
+  text-align: center;
+}
 
 .houses-header {
   display: grid;
@@ -170,7 +175,8 @@ li a {
 
 .cards-container {
   display: grid;
-  height: 95vh;
+  min-height: 100vh;
+  height: auto;
   grid-template-columns: 1fr 1fr ;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:

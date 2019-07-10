@@ -6,7 +6,7 @@ function main () {
   var navbarInstance = null;
   var rootElement = document.querySelector('#root');
   var links = [
-    {name: 'Home',
+    {name: 'GOT',
     url: '/'},
     {name: 'Houses',
     url: '/Houses'}
