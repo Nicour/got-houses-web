@@ -6,7 +6,7 @@ function Card(house) {
 
 Card.prototype.generate = function() {
   return `
-  <article class="card-container">
+  <article class="cards">
     <h3>${this.house.name}</h3>
     <p>Region: ${this.house.region}</p>
   </article>
