@@ -191,7 +191,7 @@ header.houses-header {
 
 .houses-header h2 {
   -webkit-animation: text-flicker-in-glow 4s linear both;
-	animation: text-flicker-in-glow 4s linear both;
+	animation: text-flicker-in-glow 2s linear both;
 }
 
 @-webkit-keyframes text-flicker-in-glow {
@@ -465,28 +465,53 @@ header.houses-header {
   padding: 2%;
   background-image: linear-gradient(black, grey, black);
   border: none;
-  transform-style: preserve-3d;
-  animation: rotation 20s infinite normal;;
-  position: relative;
 }
-
 
 .cards {
-  position: relative;
-  animation: rebota 1s alternate infinite ease-out;
+  -webkit-animation: slide-in-blurred-left 2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+	        animation: slide-in-blurred-left 2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
 }
 
-@-webkit-keyframes rebota {
+@-webkit-keyframes slide-in-blurred-left {
   0% {
-    top: 1%;
-    height: 5%;
+    -webkit-transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+            transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+    -webkit-transform-origin: 100% 50%;
+            transform-origin: 100% 50%;
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+    opacity: 0;
   }
   100% {
-    top: 90%;
+    -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+            transform: translateX(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
   }
 }
- 
-
+@keyframes slide-in-blurred-left {
+  0% {
+    -webkit-transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+            transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+    -webkit-transform-origin: 100% 50%;
+            transform-origin: 100% 50%;
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+            transform: translateX(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
 
 @media (min-width: 400px) {
   cards-container {
