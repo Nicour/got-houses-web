@@ -228,9 +228,10 @@ header.houses-header {
 }
 
 .houses-header h2 {
-  -webkit-animation: text-flicker-in-glow 2s linear both;
-	animation: text-flicker-in-glow 2s linear both;
+  -webkit-animation: text-flicker-in-glow 4s linear both;
+	        animation: text-flicker-in-glow 4s linear both;
 }
+
 
 @-webkit-keyframes text-flicker-in-glow {
   0% {
@@ -486,8 +487,6 @@ header.houses-header {
 
 
 
-
-
 .cards-container {
   display: grid;
   grid-auto-flow: dense;
@@ -509,8 +508,8 @@ header.houses-header {
 }
 
 .cards {
-  -webkit-animation: slide-in-blurred-left 2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-	        animation: slide-in-blurred-left 2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+  -webkit-animation: slide-in-blurred-left 4s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+	        animation: slide-in-blurred-left 4s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
 }
 
 @-webkit-keyframes slide-in-blurred-left {
