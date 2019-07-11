@@ -96,16 +96,16 @@ li a {
   0% {
     letter-spacing: 1em;
     -webkit-transform: translateZ(300px);
-            transform: translateZ(300px);
+    transform: translateZ(300px);
     -webkit-filter: blur(12px);
-            filter: blur(12px);
+    filter: blur(12px);
     opacity: 0;
   }
   100% {
     -webkit-transform: translateZ(12px);
-            transform: translateZ(12px);
+    transform: translateZ(12px);
     -webkit-filter: blur(0);
-            filter: blur(0);
+    filter: blur(0);
     opacity: 1;
   }
 }
@@ -113,18 +113,27 @@ li a {
   0% {
     letter-spacing: 1em;
     -webkit-transform: translateZ(300px);
-            transform: translateZ(300px);
+    transform: translateZ(300px);
     -webkit-filter: blur(12px);
-            filter: blur(12px);
+    filter: blur(12px);s
     opacity: 0;
   }
   100% {
     -webkit-transform: translateZ(12px);
-            transform: translateZ(12px);
+    transform: translateZ(12px);
     -webkit-filter: blur(0);
-            filter: blur(0);
+    filter: blur(0);
     opacity: 1;
   }
+}
+
+
+.navbar-links { 
+  transition: all .2s ease-in-out; 
+}
+   
+.navbar-links:hover { 
+  transform: scale(1.5); 
 }
 
 
@@ -229,7 +238,7 @@ header.houses-header {
 
 .houses-header h2 {
   -webkit-animation: text-flicker-in-glow 3s linear both;
-	        animation: text-flicker-in-glow 3s linear both;
+	animation: text-flicker-in-glow 3s linear both;
 }
 
 
@@ -358,6 +367,7 @@ header.houses-header {
     text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
   }
 }
+
 @keyframes text-flicker-in-glow {
   0% {
     opacity: 0;
@@ -507,48 +517,49 @@ header.houses-header {
   border: none;
 }
 
+
 .cards {
   -webkit-animation: slide-in-blurred-left 4s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-	        animation: slide-in-blurred-left 4s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+	animation: slide-in-blurred-left 4s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
 }
 
 @-webkit-keyframes slide-in-blurred-left {
   0% {
     -webkit-transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
-            transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+    transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
     -webkit-transform-origin: 100% 50%;
-            transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
     -webkit-filter: blur(40px);
-            filter: blur(40px);
+    filter: blur(40px);
     opacity: 0;
   }
   100% {
     -webkit-transform: translateX(0) scaleY(1) scaleX(1);
-            transform: translateX(0) scaleY(1) scaleX(1);
+    transform: translateX(0) scaleY(1) scaleX(1);
     -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
     -webkit-filter: blur(0);
-            filter: blur(0);
+    filter: blur(0);
     opacity: 1;
   }
 }
 @keyframes slide-in-blurred-left {
   0% {
     -webkit-transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
-            transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+    transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
     -webkit-transform-origin: 100% 50%;
-            transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
     -webkit-filter: blur(40px);
-            filter: blur(40px);
+    filter: blur(40px);
     opacity: 0;
   }
   100% {
     -webkit-transform: translateX(0) scaleY(1) scaleX(1);
-            transform: translateX(0) scaleY(1) scaleX(1);
+    transform: translateX(0) scaleY(1) scaleX(1);
     -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
     -webkit-filter: blur(0);
-            filter: blur(0);
+    filter: blur(0);
     opacity: 1;
   }
 }
