@@ -6,9 +6,16 @@ function HousesPage(parentElement) {
   this.houses = null;
   this.loading = null;
   this.img = [
-    "",
-    "",
-    "",
+    "/style/images/Sunderly.png",
+    "/style/images/Sunglass.png",
+    "/style/images/Swann.png",
+    "/style/images/Swyft.png",
+    "/style/images/Swygert.png",
+    "/style/images/Tallhart.png",
+    "/style/images/Tarbeck.png",
+    "/style/images/Targaryen.png",
+    "/style/images/Tarly.png",
+    "/style/images/Tarth.svg.png",
   ]
 }
 

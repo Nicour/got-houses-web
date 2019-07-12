@@ -520,6 +520,10 @@ header.houses-header {
   border: none;
 }
 
+img {
+ width: 5%;
+ height: 5%;
+}
 
 
 .cards {
