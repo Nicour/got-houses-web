@@ -520,9 +520,10 @@ header.houses-header {
   border: none;
 }
 
-img {
- width: 5%;
- height: 5%;
+.images {
+  width: 8%;
+  height: 8%;
+  opacity: 0.5;
 }
 
 
