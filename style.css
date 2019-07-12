@@ -527,7 +527,7 @@ header.houses-header {
 .images {
   width: 15%;
   height: 15%;
-  opacity: 0.5;
+  opacity: 0.7;
   -webkit-animation: pulsate-fwd 0.5s ease-in-out 3s infinite both;
 	animation: pulsate-fwd 0.5s ease-in-out 3s infinite both;
 }
