@@ -520,9 +520,13 @@ header.houses-header {
   border: none;
 }
 
+.card-name {
+  font-size: 1em;
+}
+
 .images {
-  width: 8%;
-  height: 8%;
+  width: 15%;
+  height: 15%;
   opacity: 0.5;
   -webkit-animation: pulsate-fwd 0.5s ease-in-out 3s infinite both;
 	animation: pulsate-fwd 0.5s ease-in-out 3s infinite both;

@@ -10,7 +10,7 @@ Card.prototype.generate = function() {
   return `
   <article class="cards">
     <a href="${this.href}"><img class="images" src="${this.img}" /></a>
-    <h3>${this.house.name}</h3>
+    <h3 class="card-name">${this.house.name}</h3>
   </article>
 `;
 }
