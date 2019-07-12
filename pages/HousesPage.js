@@ -17,6 +17,18 @@ function HousesPage(parentElement) {
     "./style/images/Tarly.png",
     "./style/images/Tarth.svg.png",
   ]
+  this.href = [
+    "https://awoiaf.westeros.org/index.php/House_Sunderly",
+    "https://awoiaf.westeros.org/index.php/House_Sunglass",
+    "https://awoiaf.westeros.org/index.php/House_Swann",
+    "https://awoiaf.westeros.org/index.php/House_Swyft",
+    "https://awoiaf.westeros.org/index.php/House_Swygert",
+    "https://awoiaf.westeros.org/index.php/House_Tallhart",
+    "https://awoiaf.westeros.org/index.php/House_Tarbeck",
+    "https://awoiaf.westeros.org/index.php/House_Targaryen",
+    "https://awoiaf.westeros.org/index.php/House_Tarly",
+    "https://awoiaf.westeros.org/index.php/House_Tarth"
+  ]
 }
 
 HousesPage.prototype.generate = async function() {
@@ -30,7 +42,7 @@ HousesPage.prototype.generate = async function() {
     <section class="cards-container">
   `;
   this.houses.forEach((house,i) => {
-    var houseCard = new Card(house,this.img[i]);
+    var houseCard = new Card(house,this.img[i], this.href[i]);
     this.elements += houseCard.generate();
   })
   this.elements += `</section>`
