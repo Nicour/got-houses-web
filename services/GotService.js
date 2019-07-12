@@ -1,7 +1,7 @@
 'use strict';
 
 function GotService() {
-  this.baseUrl = 'https://anapioficeandfire.com/api/houses/';
+  this.baseUrl = 'https://anapioficeandfire.com/api/houses?page=39&pageSize=10"/';
 }
 
 GotService.prototype.getAllHouses = async function() {

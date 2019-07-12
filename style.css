@@ -82,14 +82,13 @@ ul {
 li {
   list-style: none;
   align-items: center;
-  
 }
 
 li a {
   text-decoration: none;
   color: whitesmoke;
   -webkit-animation: focus-in-contract-bck 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: focus-in-contract-bck 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: focus-in-contract-bck 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 @-webkit-keyframes focus-in-contract-bck {
@@ -146,7 +145,7 @@ li a {
   grid-template-areas:
     "main main main";
   gap: 10px;
-  background-image: linear-gradient(black, grey);
+  background-color: linear-gradient(black, grey);
 }
 
 @media (min-width: 400px) {
@@ -214,8 +213,12 @@ li a {
   }
 }
 
-.loading {
+#site-main {
+  height: 100vh;
   background-image: linear-gradient(black, grey);
+}
+
+.loading {
   color: whitesmoke;
   font-size: 1em;
   text-align: center;
@@ -520,46 +523,46 @@ header.houses-header {
 
 .cards {
   -webkit-animation: slide-in-blurred-bl 4s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-	        animation: slide-in-blurred-bl 4s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+	animation: slide-in-blurred-bl 4s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
 }
 
 @-webkit-keyframes slide-in-blurred-bl {
   0% {
     -webkit-transform: translate(-1000px, 1000px) skew(-80deg, -10deg);
-            transform: translate(-1000px, 1000px) skew(-80deg, -10deg);
+    transform: translate(-1000px, 1000px) skew(-80deg, -10deg);
     -webkit-transform-origin: 100% 100%;
-            transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
     -webkit-filter: blur(40px);
-            filter: blur(40px);
+    filter: blur(40px);
     opacity: 0;
   }
   100% {
     -webkit-transform: translate(0, 0) skew(0deg, 0deg);
-            transform: translate(0, 0) skew(0deg, 0deg);
+    transform: translate(0, 0) skew(0deg, 0deg);
     -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
     -webkit-filter: blur(0);
-            filter: blur(0);
+    filter: blur(0);
     opacity: 1;
   }
 }
 @keyframes slide-in-blurred-bl {
   0% {
     -webkit-transform: translate(-1000px, 1000px) skew(-80deg, -10deg);
-            transform: translate(-1000px, 1000px) skew(-80deg, -10deg);
+    transform: translate(-1000px, 1000px) skew(-80deg, -10deg);
     -webkit-transform-origin: 100% 100%;
-            transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
     -webkit-filter: blur(40px);
-            filter: blur(40px);
+    filter: blur(40px);
     opacity: 0;
   }
   100% {
     -webkit-transform: translate(0, 0) skew(0deg, 0deg);
-            transform: translate(0, 0) skew(0deg, 0deg);
+    transform: translate(0, 0) skew(0deg, 0deg);
     -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
     -webkit-filter: blur(0);
-            filter: blur(0);
+    filter: blur(0);
     opacity: 1;
   }
 }
