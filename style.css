@@ -524,71 +524,38 @@ header.houses-header {
   width: 8%;
   height: 8%;
   opacity: 0.5;
-  -webkit-animation: jello-diagonal-1 2s cubic-bezier(0.445, 0.050, 0.550, 0.950) 3s both;
-	animation: jello-diagonal-1 2s cubic-bezier(0.445, 0.050, 0.550, 0.950) 3s both;
+  -webkit-animation: pulsate-fwd 0.5s ease-in-out 3s infinite both;
+	animation: pulsate-fwd 0.5s ease-in-out 3s infinite both;
 }
 
-@-webkit-keyframes jello-diagonal-1 {
+@-webkit-keyframes pulsate-fwd {
   0% {
-    -webkit-transform: skew(0deg 0deg);
-            transform: skew(0deg 0deg);
-  }
-  30% {
-    -webkit-transform: skew(25deg 25deg);
-            transform: skew(25deg 25deg);
-  }
-  40% {
-    -webkit-transform: skew(-15deg, -15deg);
-            transform: skew(-15deg, -15deg);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   50% {
-    -webkit-transform: skew(15deg, 15deg);
-            transform: skew(15deg, 15deg);
-  }
-  65% {
-    -webkit-transform: skew(-5deg, -5deg);
-            transform: skew(-5deg, -5deg);
-  }
-  75% {
-    -webkit-transform: skew(5deg, 5deg);
-            transform: skew(5deg, 5deg);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   100% {
-    -webkit-transform: skew(0deg 0deg);
-            transform: skew(0deg 0deg);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
-@keyframes jello-diagonal-1 {
+@keyframes pulsate-fwd {
   0% {
-    -webkit-transform: skew(0deg 0deg);
-            transform: skew(0deg 0deg);
-  }
-  30% {
-    -webkit-transform: skew(25deg 25deg);
-            transform: skew(25deg 25deg);
-  }
-  40% {
-    -webkit-transform: skew(-15deg, -15deg);
-            transform: skew(-15deg, -15deg);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   50% {
-    -webkit-transform: skew(15deg, 15deg);
-            transform: skew(15deg, 15deg);
-  }
-  65% {
-    -webkit-transform: skew(-5deg, -5deg);
-            transform: skew(-5deg, -5deg);
-  }
-  75% {
-    -webkit-transform: skew(5deg, 5deg);
-            transform: skew(5deg, 5deg);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   100% {
-    -webkit-transform: skew(0deg 0deg);
-            transform: skew(0deg 0deg);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
-
 
 .images:hover {
   -webkit-animation: rotate-scale-up 0.65s linear both;
