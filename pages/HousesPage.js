@@ -5,6 +5,11 @@ function HousesPage(parentElement) {
   this.elements = null;
   this.houses = null;
   this.loading = null;
+  this.img = [
+    "",
+    "",
+    "",
+  ]
 }
 
 HousesPage.prototype.generate = async function() {
@@ -17,8 +22,8 @@ HousesPage.prototype.generate = async function() {
     </header>
     <section class="cards-container">
   `;
-  this.houses.forEach((house) => {
-    var houseCard = new Card(house);
+  this.houses.forEach((house,i) => {
+    var houseCard = new Card(house,this.img[i]);
     this.elements += houseCard.generate();
   })
   this.elements += `</section>`
