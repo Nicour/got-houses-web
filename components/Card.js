@@ -11,7 +11,6 @@ Card.prototype.generate = function() {
   <article class="cards">
     <a href="${this.href}"><img class="images" src="${this.img}" /></a>
     <h3>${this.house.name}</h3>
-    <p>Region: ${this.house.region}</p>
   </article>
 `;
 }
