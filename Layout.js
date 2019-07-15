@@ -1,28 +1,27 @@
 'use strict';
 
-function Layout(root, style) {
-  this.root = root;
-  this.style = style;
-  this.elements = null;
-  this.header = null;
-  this.main = null;
-}
-
-Layout.prototype.generate = function() {
-  this.elements = `
+class Layout {
+  constructor (root, style) {
+    this.root = root;
+    this.style = style;
+    this.elements = null;
+    this.header = null;
+    this.main = null;
+  }
+  generate() {
+    this.elements = `
     <header id="site-header"></header>
     <main id="site-main"></main>
   `;
-
   this.render();
   this.getContainers();
-}
-
-Layout.prototype.render = function() {
-  this.root.innerHTML = this.elements;
-}
-
-Layout.prototype.getContainers = function() {
-  this.header = document.querySelector('#site-header');
+  }
+  
+  render() {
+    this.root.innerHTML = this.elements;
+  }
+  getContainers() {
+    this.header = document.querySelector('#site-header');
   this.main = document.querySelector('#site-main');
+  }
 }

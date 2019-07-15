@@ -1,14 +1,15 @@
 'use strict';
 
-function Navbar(parentElement, links, style) {
-  this.parentElement = parentElement;
-  this.links = links;
-  this.style = style;
-  this.elements = null;
-}
+class Navbar {
+  constructor(parentElement, links, style) {
+    this.parentElement = parentElement;
+    this.links = links;
+    this.style = style;
+    this.elements = null;
+  };
 
-Navbar.prototype.generate = function() {
-  this.elements = `<nav>
+  generate() {
+    this.elements = `<nav>
                       <ul>`;
   this.links.forEach ((link) => {
     this.elements += `
@@ -22,8 +23,9 @@ Navbar.prototype.generate = function() {
   `; 
 
   this.render();
-}
+  }
+  render() {
+    this.parentElement.innerHTML = this.elements;
+  }
+};
 
-Navbar.prototype.render = function() {
-  this.parentElement.innerHTML = this.elements;
-}

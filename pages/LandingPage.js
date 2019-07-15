@@ -1,12 +1,12 @@
 'use strict';
 
-function LandingPage(parentElement) {
-  this.parentElement = parentElement;
-  this.elements = null;
-}
-
-LandingPage.prototype.generate = function() {
-  this.elements =  `
+class LandingPage{
+  constructor(parentElement) {
+    this.parentElement = parentElement;
+    this.elements = null;
+  }
+  generate() {
+    this.elements =  `
     <section>
       <article class="landing-page">
         <h1 class="title"> THE -ALMOST- BEST GAME OF THRONES WEB PAGE YOU HAVE EVER SEEN </h1>
@@ -15,8 +15,8 @@ LandingPage.prototype.generate = function() {
     </section>
   `;
   this.render();
-}
-
-LandingPage.prototype.render = function() {
-  this.parentElement.innerHTML = this.elements;
+  }
+  render() {
+    this.parentElement.innerHTML = this.elements;
+  }
 }

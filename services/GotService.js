@@ -1,13 +1,14 @@
 'use strict';
 
-function GotService() {
-  this.baseUrl = 'https://anapioficeandfire.com/api/houses?page=38&pageSize=10"/';
-}
-
-GotService.prototype.getAllHouses = async function() {
-  var response =  await fetch(`${this.baseUrl}`);
-  var data = await response.json();
+class GotService {
+  constructor() {
+    this.baseUrl = 'https://anapioficeandfire.com/api/houses?page=38&pageSize=10"/';
+  } 
+  async getAllHouses() {
+    const response =  await fetch(`${this.baseUrl}`);
+  const data = await response.json();
   return data;
+  }
 }
 
-var gotServiceInstance = new GotService();
+const gotServiceInstance = new GotService();
